@@ -50,12 +50,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_BASE] = LAYOUT( \
   KC_Q, KC_W, KC_E,    KC_R,    KC_T,                                       KC_Y, KC_U,    KC_I,    KC_O,   KC_P,    \
-  KC_A, KC_S, KC_D,    KC_F,    KC_G,                                       KC_H, KC_J,    KC_K,    KC_L,   KC_SCLN, \
-  KC_Z, KC_X, KC_C,    KC_V,    KC_B,                                       KC_N, KC_M,    KC_COMM, KC_DOT, KC_QUOT, \
-              KC_LBRC, KC_RBRC,                                                   KC_MINS, KC_EQL,                   \
+  KC_A, KC_S, KC_D,    KC_F,    KC_G,                                       KC_H, KC_J,    KC_K,    KC_L,   KC_BSLS, \
+  KC_Z, KC_X, KC_C,    KC_V,    KC_B,                                       KC_N, KC_M,    KC_COMM, KC_DOT, KC_SLSH, \
+              KC_MPLY, KC_GRV,                                                   KC_MINS, KC_EQL,                   \
                                       SFT_ESC, CTL_BSPC,  ALT_SPC, SFT_ENT,                                          \
-                                      KC_TAB,  KC_HOME,   KC_END,  KC_DEL,                                           \
-                                      RAISE,   KC_GRV,    KC_LGUI, LOWER
+                                      KC_TAB,  MT(KC_LPRN, KC_LBRC),  MT(KC_RPRN, KC_RBRC),  KC_LGUI,               \
+                                      RAISE, MT(KC_BSLS, KC_SCLN),   MT(KC_SLSH, KC_QUOT), LOWER
 ),
 
 /* Raise
@@ -79,20 +79,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                    '------+------' '------+------'
  */
 
-[_RAISE] = LAYOUT( \
-  ____, ____,  KC_MU, ____,  ____,                          KC_VOLU, ____,    KC_UP,   ____,     KC_PGUP,   \
-  ____, KC_ML, KC_MD, KC_MR, ____,                          KC_MUTE, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDOWN, \
-  ____, ____,  ____,  ____,  ____,                          KC_VOLD, KC_SLSH, KC_BSLS, KC_QUES,  KC_PIPE,   \
-        ____,  ____,                                                          KC_MB1,  KC_MB2,              \
-                                   ____, ____,  ____, ____,                                                 \
-                                   ____, ____,  ____, ____,                                                 \
-                                   ____, ____,  ____, ____                                                  \
-),
+[_RAISE] = LAYOUT(
+  ____, ____,  KC_MU, ____,  KC_WH_U,                         KC_VOLU, ____,    KC_UP,   ____,     KC_PGUP,   \
+  ____, KC_ML, KC_MD, KC_MR, KC_WH_D,                         KC_MUTE, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDOWN, \
+  ____, ____,  KC_MPLY, KC_MRWD, KC_MFFD,                        KC_VOLD, KC_SLSH, KC_BSLS, KC_QUES,  KC_PIPE,   \
+        ____,  ____,                                                            KC_MB1,  KC_MB2,              \
+                                     ____, ____,  ____, ____,                                                 \
+                                     ____, ____,  ____, ____,                                                 \
+                                     ____, ____,  ____, ____                                                  \
+
 /* Lower
  * ,----------------------------------,                             ,----------------------------------,
  * | F1   | F2   | F3   | F4   | F5   |                             |  F6  | F7   |  F8  |  F9  |  F10 |
  * |------+------+------+------+------|                             |-------------+------+------+------|
- * |  1   |  2   |  3   |  4   |  5   |                             |  6   |  7   |  8   |  9   |  10  |
+ * |  1   |  2   |  3   |  4   |  5   |                             |  6   |  7   |  8   |  9   |  0   |
  * |------+------+------+------+------|                             |------|------+------+------+------|
  * |  !   |  @   |  #   |  $   |  %   |                             |  ^   |  &   |  *   |  (   |  )   |
  * |------+------+------+-------------,                             ,-------------+------+------+------,
