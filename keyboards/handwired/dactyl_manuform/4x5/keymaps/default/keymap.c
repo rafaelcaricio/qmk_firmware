@@ -54,8 +54,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_Z, KC_X, KC_C,    KC_V,    KC_B,                                       KC_N, KC_M,    KC_COMM, KC_DOT, KC_SLSH, \
               KC_MPLY, KC_GRV,                                                   KC_MINS, KC_EQL,                   \
                                       SFT_ESC, CTL_BSPC,  ALT_SPC, SFT_ENT,                                          \
-                                      KC_TAB,  MT(KC_LPRN, KC_LBRC),  MT(KC_RPRN, KC_RBRC),  KC_LGUI,               \
-                                      RAISE, MT(KC_BSLS, KC_SCLN),   MT(KC_SLSH, KC_QUOT), LOWER
+                                      KC_TAB,  KC_LBRC,   KC_RBRC,  KC_LGUI,               \
+                                      RAISE,   KC_SCLN,   KC_QUOT, LOWER
 ),
 
 /* Raise
@@ -115,8 +115,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_EXLM, KC_AT,  KC_HASH, KC_DLR, KC_PERC,                          KC_CIRC, KC_AMPR,  KC_ASTR, KC_LPRN, KC_RPRN, \
            KC_F11, KC_F12,                                                               ____,    ____,             \
                                              ____, ____,  ____, ____,                                               \
-                                             ____, ____,  ____, ____,                                               \
-                                             ____, ____,  ____, ____                                                \
+                                             KC_BSLS, S(KC_9),  ____, ____,                                               \
+                                             KC_SLSH, S(KC_0),  ____, ____                                                \
 )
 };
 
