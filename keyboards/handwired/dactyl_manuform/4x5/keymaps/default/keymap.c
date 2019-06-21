@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_Q, KC_W, KC_E,    KC_R,    KC_T,                                       KC_Y, KC_U,    KC_I,    KC_O,   KC_P,    \
   KC_A, KC_S, KC_D,    KC_F,    KC_G,                                       KC_H, KC_J,    KC_K,    KC_L,   KC_BSLS, \
   KC_Z, KC_X, KC_C,    KC_V,    KC_B,                                       KC_N, KC_M,    KC_COMM, KC_DOT, KC_SLSH, \
-              KC_MPLY, KC_GRV,                                                   KC_MINS, KC_EQL,                   \
+              KC_SPC, KC_GRV,                                                   KC_MINS, KC_EQL,                   \
                                       SFT_ESC, CTL_BSPC,  ALT_SPC, SFT_ENT,                                          \
                                       KC_TAB,  KC_LBRC,   KC_RBRC,  KC_LGUI,               \
                                       RAISE,   KC_SCLN,   KC_QUOT, LOWER
@@ -80,9 +80,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_RAISE] = LAYOUT(
-  ____, ____,  KC_MU, ____,  KC_WH_U,                         KC_VOLU, ____,    KC_UP,   ____,     KC_PGUP,   \
-  ____, KC_ML, KC_MD, KC_MR, KC_WH_D,                         KC_MUTE, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDOWN, \
-  ____, ____,  KC_MPLY, KC_MRWD, KC_MFFD,                        KC_VOLD, KC_SLSH, KC_BSLS, KC_QUES,  KC_PIPE,   \
+  ____,   ____,  ____,  ____, KC_WH_U,                         KC_VOLU,    ____,  ____,    ____,     ____,   \
+  KC_ML, KC_MD, KC_MU, KC_MR, KC_WH_D,                         KC_MUTE, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, \
+  ____, ____, KC_MPLY, KC_MRWD, KC_MFFD,                     KC_VOLD, KC_SLSH, KC_BSLS, KC_QUES,  KC_PIPE, \
         ____,  ____,                                                            KC_MB1,  KC_MB2,              \
                                      ____, ____,  ____, ____,                                                 \
                                      ____, ____,  ____, ____,                                                 \
