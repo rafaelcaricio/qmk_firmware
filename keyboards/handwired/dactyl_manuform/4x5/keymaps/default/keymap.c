@@ -6,6 +6,8 @@ extern keymap_config_t keymap_config;
 #define _RAISE 1
 #define _LOWER 2
 
+
+
 // Fillers to make layering more clear
 
 #define ____ KC_TRNS
